@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" >
+        
+    <title>Jquery</title>
+  </head>
+  <body>
+    <h1>Faculdade Alfa</h1>
+    <a href="#" id="link1">Home</a>
+    <a href="#" id="link2">Sobre</a>
+    <a href="#" id="link3">Contato</a>
+    <script src="jquery/jquery-3.3.1.slim.min.js" ></script>
+    <script src="popper/popper.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    <script>
+      $(document).ready(function(){
+        const texto = $('h1').text();
+        /*$('h1').css('color','#F66');
+        $('h1').css('background','#000');
+        $('h1').hover(function(){
+          $(this).text("O imundo");
+        });
+        $('H1').mouseout(function(){
+          $(this).text(texto);
+        });*/
+        //opção inline
+        //$('h1').css('color','#F66').css('background','#000');
+        //opção inblock
+        /*$('h1').css('color','#F66')
+          .css('background','#000')
+            .hover(function(){
+              $(this).text('O imundo');
+            })
+            .mouseout(function(){
+              $(this).text(texto);
+            });*/
+          $('h1').css(
+          {
+            'color':'#F66',
+            'background':'#000',
+            'padding':'10px',
+            'margin-top':'10px'
+          }
+          )
+          .hover(function(){
+              $(this).text('O imundo')
+            })
+          .mouseout(function(){
+              $(this).text(texto)
+            })
+
+          $('a').css(
+          {
+            'background':'#F66',
+            'padding':'10px',
+            'border-radius':'6px',
+            'margin-top':'20px',
+            'text-decoration':'none',
+            'color':'#FFF'
+          }
+            )
+          $('#link1').css('color','#000');
+      })
+    </script>
+  </body>
+</html>
