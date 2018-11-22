@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container bg-dark">
+		<div class="alert alert-danger text-center">
+  	 		<a href="#" class="alert-link">Cardápio</a>
+  	 		<a href="cadastro.html" class="alert-link">Cadastro</a>
+		</div>
+		<div class="row text-center" id="inclui">
+
+	  	</div>
+	 
+	</div>
+	 <script>
+      const imagens = document.getElementById('inclui');
+      const menu = 
+      [
+        {
+          img:'img/bebidas.png',
+          texto: 'Bebidas'
+        },
+        {
+          img:'img/lanches.png',
+          texto: 'lanches'
+        },
+        {
+          img:'img/garcons.png',
+          texto: 'Garçons'
+        },
+        {
+          img:'img/porcoes.png',
+          texto: 'Porções'
+        },
+        {
+          img:'img/pratos.png',
+          texto: 'Pratos'
+        },
+        {
+          img:'img/sobremesas.png',
+          texto: 'Sobremesas'
+        }
+      ]
+
+      menu.map((f)=>{
+        let item = `
+			<div class="col">
+		  		<div class="text-center">
+		  			<img src="${f.img}"><br>
+		    		<h4><a class="text-center" href="">${f.texto}</a></h4>
+	    		</div>
+	  		</div>
+        `;
+        imagens.innerHTML += item;
+      })
+    </script>
+</body>
+</html>

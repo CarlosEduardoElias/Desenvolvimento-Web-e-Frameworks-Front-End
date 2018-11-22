@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body> 
+	<div class="container bg-dark">
+		<div class="alert alert-success text-center">
+  	 		<a href="#" class="alert-link">Lanches</a>
+  	 		<a href="#" class="alert-link">Cadastro</a>
+		</div>
+		<div class="card">
+		  	<div class="card-body">
+		     	<form name="formCadastro" id="formCadastro" method="POST">
+		          <div class="form-group">
+		            <label for="produto">Produto:</label>
+		            <input class="form-control" type="text" name="produto" id="produto" placeholder="Produto">
+		          </div>
+		           <div class="form-group">
+		            <label for="preco">Preço:</label>
+		            <input class="form-control" type="text" name="preco" id="preco" placeholder="Preço">
+		          </div>
+		          <div class="form-group">
+		            <label for="ingredientes">Ingredientes:</label>
+		            <textarea class="form-control" type="text" name="ingredientes" id="ingredientes"></textarea>
+		          </div>
+		          <div class="form-group">
+		            <button type="submit" class="btn btn-success">Salvar</button>
+		            <button type="reset" class="btn btn-danger">Cancelar</button>
+		          </div>
+	          </form>			
+  			</div>
+		</div>
+	</div>
+</body>
+</html>
